@@ -41,7 +41,7 @@ ALLOWED_HOSTS = [
     if host.strip()
 ]
 
-CORS_ALLOWED_ORIGINS=['https://personal-site-frontend-sepia.vercel.app', 'https://dehkonaliev.uz']
+CORS_ALLOWED_ORIGINS=['https://personal-site-frontend-sepia.vercel.app', 'https://dehkonaliev.uz', 'https://www.dehkonaliev.uz']
 
 
 # Application definition
