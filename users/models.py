@@ -22,7 +22,7 @@ class Resume(models.Model):
     location = models.CharField(max_length=300)
     summary = models.CharField(max_length=3000)
     email = models.EmailField()
-    resume_file = models.FileField(upload_to='files/')
+    resume_file = models.FileField(upload_to='files/', blank=True, null=True)
     website_url = models.URLField(null=True, blank=True)
     github_url = models.URLField(blank=True, null=True)
     linkedin_url = models.URLField(null=True, blank=True)
