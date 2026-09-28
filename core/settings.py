@@ -36,10 +36,12 @@ ALLOWED_HOSTS = [
     host.strip()
     for host in os.environ.get(
         'DJANGO_ALLOWED_HOSTS',
-        '127.0.0.1,localhost,personal-site-backend-omega.vercel.app,dehkonaliev.uz,https://personal-site-frontend-sepia.vercel.app',
+        '127.0.0.1,localhost,personal-site-backend-omega.vercel.app,dehkonaliev.uz,personal-site-frontend-sepia.vercel.app',
     ).split(',')
     if host.strip()
 ]
+
+CORS_ALLOWED_ORIGINS=['https://personal-site-frontend-sepia.vercel.app', 'https://dehkonaliev.uz']
 
 
 # Application definition
