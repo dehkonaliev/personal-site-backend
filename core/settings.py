@@ -58,6 +58,7 @@ INSTALLED_APPS = [
     "ckeditor", 
     "ckeditor_uploader",
     'whitenoise',
+    'corsheaders',
     
     'users',
     'blog',
@@ -68,6 +69,7 @@ CKEDITOR_UPLOAD_PATH = "uploads/"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     "whitenoise.middleware.WhiteNoiseMiddleware",
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
